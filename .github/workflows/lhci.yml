@@ -1,0 +1,19 @@
+name: Lighthouse CI
+on: [push, pull_request]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lấy mã nguồn bài lab
+        uses: actions/checkout@v3
+
+      - name: Khởi tạo Node.js để chạy CLI
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Quét Performance & SEO
+        run: |
+          npm install -g @lhci/cli
+          lhci autorun
