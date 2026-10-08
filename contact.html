@@ -81,26 +81,34 @@
             color: #38a169;
             font-weight: bold;
         }
+
+        .logo img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1> Xin chào, DevOps!</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <h1> Thông tin liên hệ DevOps!</h1>
         <P>Website đã được cập nhật tự động</p>
         <h2>Lab 1 — Trải nghiệm CI/CD Pipeline</h2>
         <div class="info">
-            <p> <strong>Bài học:</strong> DevOps Lab 1 — Tổng quan</p>
+            <p> <strong>Email:</strong> dtc235180027@ictu.edu.vn</p>
             <p> <strong>Deploy bởi:</strong> GitHub Actions CI/CD</p>
             <p> <strong>Ngày deploy:</strong> <span id="date"></span></p>
             <p> <strong>Pipeline status:</strong> <span class="status"> Automated</span></p>
         </div>
-
         <div>
+            <a class="badge" href="index.html">Trang chủ</a>
             <a class="badge" href="about.html">Giới thiệu</a>
-            <a class="badge" href="contact.html">Liên hệ</a>
         </div>
-
         <div class="footer">
             <p>Deployed automatically via GitHub Actions Pipeline</p>
             <p> Push code → CI Build → Auto Deploy → Live! </p>
