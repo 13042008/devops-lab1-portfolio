@@ -27,7 +27,7 @@ jobs:
         run: |
           echo "Checking html.html exists..."
           if [ -f "html.html" ]; then
-            echo "index.html found!"
+            echo "html.html found!"
             echo "File size: $(wc -c < html.html) bytes"
           else
             echo " html.html NOT found!"
